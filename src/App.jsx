@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1><marquee Aplikasi By Kafita></marquee></h1>
+      <h1><marquee> Aplikasi By Kafita</marquee></h1>
      <button onClick={login}>Login</button>
     </div>
   )
