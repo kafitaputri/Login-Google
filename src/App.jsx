@@ -3,8 +3,11 @@ import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
 import {useNavigate} from 'react-router-dom'
 import auth from './config'
 import Home from './home'
-import reactLogo from './assets/react.svg'
+import NavbarComp from './components/NavbarComp'
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   const navigate = useNavigate()
@@ -16,10 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1><marquee> Aplikasi By Kafita</marquee></h1>
+       <NavbarComp />
+      <h1><marquee> Aplikasi By Kafita</marquee></h1>  
      <button onClick={login}>Login</button>
     </div>
-  )
+  );
+  
 }
 
 
